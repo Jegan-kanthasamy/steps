@@ -25,4 +25,5 @@ Contributions are highly encouraged! Should you encounter any issues or have ide
 
 Embrace your journey toward achieving your goals! Remember, each step takes you closer to your desired success.
 
+![Project preview ](https://github.com/Jegan-kanthasamy/steps/assets/116385792/250880ee-3a52-4560-8800-9798b858eac2)
 
