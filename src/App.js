@@ -8,7 +8,7 @@ export default function App() {
       </div>
 
       <p className="message">Hello</p>
-      <div className="buttona">
+      <div className="buttons">
         <button>Previous</button>
         <button>Next</button>
       </div>
