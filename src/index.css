@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
 }
 
-.numbers > div {
+.numbers>div {
   height: 40px;
   aspect-ratio: 1;
   background-color: #e7e7e7;
@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
 }
 
-.buttons button {
+.buttons Button {
   border: none;
   cursor: pointer;
   padding: 10px 15px;
@@ -65,7 +65,7 @@ body {
   gap: 10px;
 }
 
-.buttons button span {
+.buttons Button {
   font-size: 16px;
   line-height: 1;
 }

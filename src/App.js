@@ -17,11 +17,13 @@ export default function App() {
   function handlerNext() {
     if (step < 3) setStep(step + 1);
   }
+
   return (
     <>
       <button className="close" onClick={() => setIsOpen(!isOpen)}>
         &times;
       </button>
+
       {isOpen && (
         <div className="steps">
           <div className="numbers">
@@ -34,21 +36,26 @@ export default function App() {
             Steps {step}:{messages[step - 1]}
           </p>
           <div className="buttons">
-            <button
-              style={{ backgroundColor: " #7950f2", color: " #fff" }}
-              onClick={handlerPrevious}
-            >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: " #7950f2", color: " #fff" }}
-              onClick={handlerNext}
-            >
-              Next
-            </button>
+            <Button bgColor="#7950f2" color="#fff" method={handlerPrevious}>
+              <span>👈</span> Previous
+            </Button>
+            <Button bgColor="#7950f2" color="#fff" method={handlerNext}>
+              Next<span>👉</span>
+            </Button>
           </div>
         </div>
       )}
     </>
+  );
+}
+
+function Button({ bgColor, color, method, children }) {
+  return (
+    <button
+      style={{ backgroundColor: `${bgColor}`, color: `${color}` }}
+      onClick={method}
+    >
+      {children}
+    </button>
   );
 }
